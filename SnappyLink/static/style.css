@@ -1,0 +1,100 @@
+html, body {
+    height: 100%; /* Ensures the HTML and body elements take up the full height of the viewport */
+    margin: 0; /* Removes the default margin */
+    display: flex;
+    flex-direction: column; /* Arranges the content in a column, making the footer stick to the bottom */
+    background-color: #F8F9FA; /* Sets the background color to a light gray */
+}
+
+.container {
+    flex: 1; /* Makes the container take up available space between header and footer */
+    padding-left: 106px; /* Adds padding on the left for spacing */
+    padding-right: 106px; /* Adds padding on the right for spacing */
+}
+
+.footer {
+    position: relative;
+    bottom: 0; /* Sticks the footer to the bottom */
+    width: 100%; /* Ensures the footer spans the full width of the page */
+    background-color: #f8f9fa; /* Sets the footer background color to match the page background */
+    padding: 10px 0; /* Adds padding inside the footer for spacing */
+}
+
+/* Style for the title container (SnappyLink title area) */
+.title-container {
+    background-color: #ffffff; /* Sets the background color to white */
+    padding-left: 162px !important; /* Adds left padding to move the title to the right */
+    border-bottom: 1px dashed #DEE2E6; /* Adds a 1px dashed border at the bottom for separation */
+}
+
+.navbar-brand-custom {
+    margin-left: 166px; /* Custom left margin to position the navbar brand */
+    margin-right: 0; /* Adjust the right margin if needed */
+}
+
+/* Card styling for displaying short URL and QR code */
+.card {
+    padding: 20px; /* Adds padding inside the card to give space between content and border */
+    border: 1px solid #DEE2E6; /* Sets the border color */
+    border-radius: 12px; /* Sets rounded corners */
+}
+
+/* QR code styling */
+.qr-code {
+    width: 120px; /* Sets the fixed width of the QR code */
+    height: auto; /* Ensures the height adjusts automatically to maintain the aspect ratio */
+}
+
+/* Copy link styling (text link to copy the short URL) */
+.copy-link {
+    color: #7749F8; /* Sets the text color to a custom blue-purple color */
+    text-decoration: none; /* Removes the underline from the link */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the link */
+}
+
+.copy-link:hover {
+    color: #0056b3; /* Changes the text color on hover to a darker blue */
+    text-decoration: none; /* Ensures the underline is not shown on hover */
+}
+
+/* Download link styling (text link to download QR code) */
+.download-link {
+    color: #7749F8; /* Sets the text color to the same blue-purple as the copy link */
+    text-decoration: none; /* Removes the underline */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the link */
+}
+
+.download-link:hover {
+    color: #0056b3; /* Changes the text color on hover to a darker blue */
+    text-decoration: none; /* Ensures no underline is shown on hover */
+}
+
+/* Primary button styling (e.g., Snap button) */
+.btn-primary {
+    background-color: #ffffff; /* Sets the background color to white */
+    border-color: #7749F8; /* Sets the border color to the custom blue-purple */
+    color: #7749F8; /* Sets the text color to match the border */
+}
+
+.btn-primary:hover {
+    background-color: #5227CC; /* Darkens the background color on hover */
+    border-color: #5227CC; /* Darkens the border color on hover */
+}
+
+/* Custom navigation bar styling */
+.navbar-custom {
+    background-color: #7749F8; /* Sets a custom purple color for the navbar background */
+}
+
+.navbar-custom .navbar-brand {
+    color: #ffffff; /* Makes the navbar brand text white */
+    font-weight: bold; /* Boldens the navbar brand text */
+    font-size: 23px; /* Sets the font size, you can adjust it as needed */
+}
+
+/* Title text styling (SnappyLink main title) */
+.title-text {
+    font-size: 40px; /* Increases the font size of the main title */
+    font-weight: bold; /* Makes the main title bold */
+    color: var(--bs-gray-dark); /* Uses the Bootstrap gray color variable for the text */
+}
